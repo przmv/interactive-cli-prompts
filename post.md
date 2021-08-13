@@ -29,7 +29,7 @@ func StringPrompt(label string) string {
 	var s string
 	r := bufio.NewReader(os.Stdin)
 	for {
-		fmt.Fprint(os.Stderr, label+" ")
+		fmt.Fprint(os.Stderr, label + " ")
 		s, _ = r.ReadString('\n')
 		if s != "" {
 			break
@@ -48,7 +48,7 @@ func main() {
 
 ## How to implement password input prompt
 
-Password prompts are similar to text input prompts but we need to hide what user is typing:
+Password prompts are similar to text input prompts but we need to hide what the user is typing:
 
 ```go
 package main
@@ -67,7 +67,7 @@ import (
 func PasswordPrompt(label string) string {
 	var s string
 	for {
-		fmt.Fprint(os.Stderr, label+" ")
+		fmt.Fprint(os.Stderr, label + " ")
 		b, _ := term.ReadPassword(int(syscall.Stdin))
 		s = string(b)
 		if s != "" {

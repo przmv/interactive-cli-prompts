@@ -1,10 +1,10 @@
 ## Introduction
 
-Do you like CLI applications? I love them! `vim` is my favorite editor and I manage my source code using `git` from my terminal. Every day I use `bash`, `awk`, `sed` and lots of other CLI tools and apps for work and fun. Also, I like to develop [CLI apps](https://get.tidal.sh/) and with this post I'm going to show you how to implement different interactive prompts for you CLI apps written in Go.
+Do you like CLI applications? I love them! `vim` is my favorite editor and I manage my source code using `git` from my terminal. Every day I use `bash`, `awk`, `sed` and lots of other CLI tools and apps for work and fun. Also, I like to develop [CLI apps](https://get.tidal.sh/) and with this post, I'm going to show you how to implement different interactive prompts for your CLI apps written in Go.
 
 ## Passing data to CLI apps
 
-Oftentimes CLI applications don't just work by itself, but process or operate on some provided information or data.
+Oftentimes CLI applications don't just work by themselves, but some process or operation is required on the information or data.
 
 There are different ways to pass data to command line applications. Using flags, environment variables, file names as CLI arguments or reading from standard input is quite common and is pretty easy to implement using just the [standard Go library](https://pkg.go.dev/std). Using interactive prompts can _spice up_ your CLI application and improve the overall UX.
 
@@ -141,7 +141,7 @@ func main() {
 
 ## How to implement interactive checkboxes
 
-To create interactive multi-select prompt we're going to use awesome [`survey`](https://github.com/AlecAivazis/survey) package:
+To create an interactive multi-select prompt we're going to use an awesome [`survey`](https://github.com/AlecAivazis/survey) package:
 
 ```go
 package main

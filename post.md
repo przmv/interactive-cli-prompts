@@ -1,6 +1,6 @@
-## Introduction
+## Tidal Migrations 💓 CLI applications
 
-Do you like CLI applications? I love them! `vim` is my favorite editor and I manage my source code using `git` from my terminal. Every day I use `bash`, `awk`, `sed` and lots of other CLI tools and apps for work and fun. Also, I like to develop [CLI apps](https://get.tidal.sh/) and with this post, I'm going to show you how to implement different interactive prompts for your CLI apps written in Go.
+Do you like CLI applications? We love them! At Tidal Migrations we use full-featured GUI IDEs and editors like VS Code and Emacs but also `vim` and `git` running in our terminals. Every day we use `bash`, `awk`, `sed` and lots of other CLI tools and apps for work and fun. Also, we like to develop [CLI apps](https://get.tidal.sh/) and with this post, we're going to show you how to implement different interactive prompts for your CLI apps written in Go.
 
 ## Passing data to CLI apps
 
@@ -12,7 +12,7 @@ Let's get started!
 
 ## How to implement text input prompt
 
-The basic text input prompt is easy to implement. Just read from standard input until the `\n` character (new line/“Enter” key):
+The basic text input prompt is easy to implement. Just read from standard input until the [new line character])https://en.wikipedia.org/wiki/Newline) (`\n`):
 
 ```go
 package main
@@ -48,7 +48,7 @@ func main() {
 
 ## How to implement password input prompt
 
-Password prompts are similar to text input prompts but we need to hide what the user is typing:
+Password prompts are similar to text input prompts, except the user's typed input should be hidden:
 
 ```go
 package main
@@ -245,7 +245,7 @@ As you can see, it's pretty easy to implement basic interactive prompts, but for
 
 ## Conclusion
 
-That's it! I hope you liked it! Code examples are available on [GitHub](https://github.com/tidalmigrations/interactive-cli-prompts).
+That's it! We hope you liked it! Code examples are available on [GitHub](https://github.com/tidalmigrations/interactive-cli-prompts).
 
 If you're interested in CLI applications development in Go and we — [Tidal Migrations](https://tidalmigrations.com/) — are hiring! Please check our [Careers](https://tidalmigrations.com/careers/) page!
 

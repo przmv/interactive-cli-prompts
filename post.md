@@ -12,7 +12,7 @@ Let's get started!
 
 ## How to implement text input prompt
 
-The basic text input prompt is easy to implement. Just read from standard input until the [new line character])https://en.wikipedia.org/wiki/Newline) (`\n`):
+The basic text input prompt is easy to implement. Just read from standard input until the [new line character](https://en.wikipedia.org/wiki/Newline) (`\n`):
 
 ```go
 package main

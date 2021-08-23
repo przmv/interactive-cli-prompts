@@ -48,7 +48,7 @@ func main() {
 
 ## How to implement password input prompt
 
-Password prompts are similar to text input prompts but we need to hide what user is typing:
+Password prompts are similar to text input prompts but we need to hide what the user is typing:
 
 ```go
 package main
